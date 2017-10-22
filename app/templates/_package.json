@@ -39,5 +39,18 @@
 			"lcov",
 			"text"
 		]
-	}<% } %>
+	},<% } %>
+    "xo": {
+        "space": 4,
+        "rules": {
+            "space-before-function-paren": [
+                "error",
+                "never"
+            ]
+        },
+        "envs": [
+            "node",
+            "es6"
+        ]
+    }
 }
