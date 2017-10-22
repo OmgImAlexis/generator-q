@@ -1,4 +1,3 @@
-node_modules
-yarn.lock<% if (nyc) { %>
+node_modules<% if (nyc) { %>
 .nyc_output
 coverage<% } %>

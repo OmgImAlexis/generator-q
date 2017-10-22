@@ -1,10 +1,8 @@
-# generator-nm [![Build Status](https://travis-ci.org/sindresorhus/generator-nm.svg?branch=master)](https://travis-ci.org/sindresorhus/generator-nm)
+# generator-q [![Build Status](https://travis-ci.org/omgimalexis/generator-q.svg?branch=master)](https://travis-ci.org/omgimalexis/generator-q)
 
-> Scaffold out a [node module](https://github.com/sindresorhus/node-module-boilerplate)
+> Scaffold out a node module
 
-Optionally with a [CLI](http://en.wikipedia.org/wiki/Command-line_interface).
-
-This is what I use for [my own modules](https://www.npmjs.com/~sindresorhus).
+This is what I use for [my own modules](https://www.npmjs.com/~omgimalexis).
 
 ![](screenshot.png)
 
@@ -12,7 +10,7 @@ This is what I use for [my own modules](https://www.npmjs.com/~sindresorhus).
 ## Install
 
 ```
-$ npm install --global yo generator-nm
+$ npm install --global yo generator-q
 ```
 
 
@@ -21,16 +19,16 @@ $ npm install --global yo generator-nm
 With [yo](https://github.com/yeoman/yo):
 
 ```
-$ yo nm
+$ yo q
 ```
 
 There are multiple command-line options available:
 
 ```
-$ yo nm --help
+$ yo q --help
 
   Usage:
-    yo nm [options]
+    yo q [options]
 
   Options:
     --help          # Print the generator's options and usage
@@ -43,11 +41,6 @@ $ yo nm --help
 ```
 
 The `--org` option takes a string value (i.e. `--org=avajs`). All others are boolean flags and can be negated with the `no` prefix (i.e. `--no-codecov`). You will be prompted for any options not passed on the command-line.
-
-
-## Tip
-
-Use [chalk](https://github.com/sindresorhus/chalk) if you want colors in your CLI.
 
 
 ## License

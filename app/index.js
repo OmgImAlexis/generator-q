@@ -1,4 +1,3 @@
-'use strict';
 const superb = require('superb');
 const normalizeUrl = require('normalize-url');
 const humanizeUrl = require('humanize-url');
@@ -68,7 +67,7 @@ module.exports = class extends Generator {
 			name: 'codecov',
 			message: 'Upload coverage to codecov.io?',
 			type: 'confirm',
-			default: false,
+			default: true,
 			when: x => (x.nyc || this.options.coverage) && (this.options.codecov === undefined)
 		}]).then(props => {
 			const or = (option, prop) => this.options[option] === undefined ? props[prop || option] : this.options[option];
@@ -119,6 +118,6 @@ module.exports = class extends Generator {
 		this.spawnCommandSync('git', ['init']);
 	}
 	install() {
-		this.installDependencies({bower: false});
+		this.yarnInstall();
 	}
 };

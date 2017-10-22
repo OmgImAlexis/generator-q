@@ -43,7 +43,7 @@ Lorem ipsum.<% if (cli) { %>
 ## CLI
 
 ```
-$ npm install --global <%= moduleName %>
+$ yarn global add <%= moduleName %>
 ```
 
 ```
